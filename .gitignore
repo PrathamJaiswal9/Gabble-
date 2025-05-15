@@ -12,6 +12,13 @@ dist
 dist-ssr
 *.local
 
+**/dist
+
+
+.dist
+dist-ssr
+*.local
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -32,3 +39,34 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Ignore all dist folders anywhere
+**/dist
+**/dist-ssr
+
+# Still ignore these root-level files and folders
+node_modules
+*.log
+*.local
+
+# Editor files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+
+# Env files
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE/Debug junk
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
